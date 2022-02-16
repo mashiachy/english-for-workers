@@ -1,0 +1,24 @@
+.back-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--height, 200vh);
+  z-index: 1;
+}
+.back-overlay .back-picture-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+}
+.back-overlay picture, .back-overlay picture img {
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
