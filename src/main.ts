@@ -17,6 +17,7 @@ addEventListener('resize', handlerForBackOverlay)
 document.querySelectorAll('[data-scrollable-link]').forEach(link => link.addEventListener('click', function (e) {
   e.preventDefault()
   e.stopPropagation()
+  // @ts-ignore
   const href = this.getAttribute('href')
  
   const currentScroll = document.documentElement.scrollTop || document.body.scrollTop
